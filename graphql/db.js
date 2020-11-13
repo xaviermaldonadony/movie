@@ -28,7 +28,7 @@ export const getMovie = async (id) => {
 		},
 	} = await axios(MOVIE_DETAILS_URL, {
 		params: {
-			movie_id: id,
+			movie_id: parseInt(id),
 		},
 	}).catch((error) => {
 		console.log(error);
